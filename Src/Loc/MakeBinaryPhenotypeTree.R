@@ -1,5 +1,5 @@
 # -- Libraries 
-.libPaths("/share/ceph/wym219group/shared/libraries/R4") #add path to custom libraries to searched locations
+# .libPaths("/share/ceph/wym219group/shared/libraries/R4") #add path to custom libraries to searched locations
 library(RERconverge)
 library(tools)
 source("Src/Reu/cmdArgImport.R")
@@ -30,8 +30,16 @@ args = c('m=data/RemadeTreesAllZoonomiaSpecies.rds', "r=EcholocationUpdate2", "t
 args = c("m=data/FirstExpressionTrees.rds", "r=LiverExpression", "p=Carnivory", "t=bi", "c=all", "w=F", "v=T", "a=Data/ExpressionAnnots.csv")
 args = c("m=data/RemadeTreesAllZoonomiaSpecies.rds", "r=CVHApplesToApples", "p=Carnivory", "t=bi", "c=all", "w=F", "v=T", "a=Data/ExpressionAnnots.csv")
 
+#TOOTH DATA ARGS
+# acute lophs tree
+args = c("m=data/UNICORNsDemo.txt", "a=Results/ToothData.csv", "p=FCT_AL", "r=AcuteLophs","t=uni")
+# coronal cementum tree
+args = c("m=data/UNICORNsDemo.txt", "a=Results/ToothData.csv", "p=FCT_CM", "r=CoronalCementum","t=uni")
+# flat occlusal topography
+args = c("m=data/UNICORNsDemo.txt", "a=Results/ToothData.csv", "p=FCT_CM", "r=CoronalCementum","t=uni")
+
 # --- Standard start-up code ---
-args = commandArgs(trailingOnly = TRUE)
+# args = commandArgs(trailingOnly = TRUE)
 {  # Bracket used for collapsing purposes
   #File Prefix
   if(!is.na(cmdArgImport('r'))){                                                #This cmdArgImport script is a way to import arguments from the command line. 

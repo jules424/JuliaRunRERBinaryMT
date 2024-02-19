@@ -1,5 +1,5 @@
 # -- Libraries 
-.libPaths("/share/ceph/wym219group/shared/libraries/R4") #add path to custom libraries to searched locations
+# .libPaths("/share/ceph/wym219group/shared/libraries/R4") #add path to custom libraries to searched locations
 library(RERconverge)
 library(tools)
 source("Src/Reu/cmdArgImport.R")
@@ -32,9 +32,11 @@ args = c('r=IPCRelaxTest', 'm=data/mam120aa_trees.rds', 'v=F', 's=g')
 
 args = c('r=NewHiller4Phen', 'm=data/newHillerMainTrees.rds', 'v=F', 's=g')
 
+# ACUTE LOPHS 
+args = c('r=AcuteLophs', 'm=data/UNICORNsDemo.rds', "s=b", 'v=T')
 
 # --- Standard start-up code ---
-args = commandArgs(trailingOnly = TRUE)
+# args = commandArgs(trailingOnly = TRUE)
 {  # Bracket used for collapsing purposes
   #File Prefix
   if(!is.na(cmdArgImport('r'))){
