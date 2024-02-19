@@ -16,6 +16,12 @@ pathsObject
 
 
 
+
+
+
+
+
+
 length(which(!mainTrees$masterTree$tip.label %in% toothData$FaName))
 length(mainTrees$masterTree$tip.label)
 length(phenotypeTree$tip.label)

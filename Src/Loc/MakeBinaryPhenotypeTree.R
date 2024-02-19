@@ -26,17 +26,17 @@ source("Src/Reu/cmdArgImport.R")
 
 
 #----------------
-args = c('m=data/RemadeTreesAllZoonomiaSpecies.rds', "r=EcholocationUpdate2", "t=bi", "p=Echolocation", "c=all", "v=T", "s=Laurasiatheria")
-args = c("m=data/FirstExpressionTrees.rds", "r=LiverExpression", "p=Carnivory", "t=bi", "c=all", "w=F", "v=T", "a=Data/ExpressionAnnots.csv")
-args = c("m=data/RemadeTreesAllZoonomiaSpecies.rds", "r=CVHApplesToApples", "p=Carnivory", "t=bi", "c=all", "w=F", "v=T", "a=Data/ExpressionAnnots.csv")
+# args = c('m=data/RemadeTreesAllZoonomiaSpecies.rds', "r=EcholocationUpdate2", "t=bi", "p=Echolocation", "c=all", "v=T", "s=Laurasiatheria")
+# args = c("m=data/FirstExpressionTrees.rds", "r=LiverExpression", "p=Carnivory", "t=bi", "c=all", "w=F", "v=T", "a=Data/ExpressionAnnots.csv")
+# args = c("m=data/RemadeTreesAllZoonomiaSpecies.rds", "r=CVHApplesToApples", "p=Carnivory", "t=bi", "c=all", "w=F", "v=T", "a=Data/ExpressionAnnots.csv")
 
 #TOOTH DATA ARGS
 # acute lophs tree
-args = c("m=data/UNICORNsDemo.txt", "a=Results/ToothData.csv", "p=FCT_AL", "r=AcuteLophs","t=uni")
+args = c("m=Data/toothUnicorns.txt", "a=Results/ToothData.csv", "p=FCT_AL", "r=AcuteLophsFull","t=uni")
 # coronal cementum tree
-args = c("m=data/UNICORNsDemo.txt", "a=Results/ToothData.csv", "p=FCT_CM", "r=CoronalCementum","t=uni")
+# args = c("m=data/UNICORNsDemo.txt", "a=Results/ToothData.csv", "p=FCT_CM", "r=CoronalCementum","t=uni")
 # flat occlusal topography
-args = c("m=data/UNICORNsDemo.txt", "a=Results/ToothData.csv", "p=FCT_CM", "r=CoronalCementum","t=uni")
+# args = c("m=data/UNICORNsDemo.txt", "a=Results/ToothData.csv", "p=FCT_CM", "r=CoronalCementum","t=uni")
 
 # --- Standard start-up code ---
 # args = commandArgs(trailingOnly = TRUE)
@@ -70,7 +70,7 @@ args = c("m=data/UNICORNsDemo.txt", "a=Results/ToothData.csv", "p=FCT_CM", "r=Co
 
 # --- Argument Imports ---
 # Defaults
-mainTreesLocation = "/share/ceph/wym219group/shared/projects/MammalDiet/Zoonomia/RemadeTreesAllZoonomiaSpecies.rds"
+mainTreesLocation = "Data/toothUnicorns.txt"
 annotationsLocation = "Data/manualAnnotationsSheet.csv"
 phenotypeColumn = "ERRORDEFAULT"
 transitionValue = "Default"
