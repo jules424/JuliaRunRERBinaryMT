@@ -6,7 +6,7 @@
 library(RERconverge)
 library(tools)
 # read in main tree (UNICORNS) with readTrees
-toothUnicorns = readTrees("Data/UNICORNsDemo.txt")
+toothUnicorns = readTrees("Data/toothUnicornsWithMaster.txt")
 # read in phenotype annotation csv
 toothPhenotypes = read.csv("Results/ToothData.csv")
 # set path for generated pheno tree file
@@ -15,30 +15,26 @@ treeOutput = "Output/AcuteLophsDemo.R"
 phenoColumn = "FCT_AL"
 # get species from column
 relevantSpecies = toothPhenotypes[toothPhenotypes[[phenoColumn]] %in% c(0,1)  ]
-relevantSpecies 
+#relevantSpecies 
 # create species filter
-speciesFilter = relevantSpecies$
+#speciesFilter = relevantSpecies$
 
 
 #Now, we need to pick which of the species is in the foreground 
-foregroundSpecies = relevantSpecies[ relevantSpecies[[phenotypeColumn]] == 1]
+#foregroundSpecies = relevantSpecies[ relevantSpecies[[phenotypeColumn]] == 1]
 
-foregroundNames = foregroundSpecies$nameAsItAppearsOnTheTree
-
-
+#foregroundNames = foregroundSpecies$nameAsItAppearsOnTheTree
 
 binaryPhenotypeTree = foreground2Tree(
-  foreground = foregroundNames, 
+  foreground = relevantSpecies, 
   treesObj = mainTrees, 
   clade = "all", 
   weighted = F, 
   transition = "bidirectional", 
-  useSpecies = speciesFilter
 )
 
-
 #save the tree
-saveRDS(binaryPhenotypeTree, treeOutputFile)
+saveRDS(binaryPhenotypeTree, treeOutput)
 
 #plot the tree to check it 
 pdf("output/TestPDF.pdf")

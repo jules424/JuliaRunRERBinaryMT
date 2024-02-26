@@ -32,11 +32,15 @@ source("Src/Reu/cmdArgImport.R")
 
 #TOOTH DATA ARGS
 # acute lophs tree
-args = c("m=Data/toothUnicorns.txt", "a=Results/ToothData.csv", "p=FCT_AL", "r=AcuteLophsFull","t=uni")
+# args = c("m=Data/toothUnicornsWithMaster.txt", "a=Results/ToothData.csv", "p=FCT_AL", "r=AcuteLophsFull","t=uni")
 # coronal cementum tree
-# args = c("m=data/UNICORNsDemo.txt", "a=Results/ToothData.csv", "p=FCT_CM", "r=CoronalCementum","t=uni")
-# flat occlusal topography
-# args = c("m=data/UNICORNsDemo.txt", "a=Results/ToothData.csv", "p=FCT_CM", "r=CoronalCementum","t=uni")
+# args = c("m=Data/toothUnicornsWithMaster.txt", "a=Results/ToothData.csv", "p=FCT_CM", "r=CoronalCementum","t=uni")
+# obtuse lophs
+# args = c("m=Data/toothUnicornsWithMaster.txt", "a=Results/ToothData.csv", "p=FCT_OL", "r=ObtuseLophs","t=uni")
+# structual fortification of cusps
+args = c("m=Data/toothUnicornsWithMaster.txt", "a=Results/ToothData.csv", "p=FCT_SF", "r=StructuralFortification","t=uni")
+# occlusal topography
+# args = c("m=Data/toothUnicornsWithMaster.txt", "a=Results/ToothData.csv", "p=FCT_OT", "r=OcclusalTop","t=uni")
 
 # --- Standard start-up code ---
 # args = commandArgs(trailingOnly = TRUE)

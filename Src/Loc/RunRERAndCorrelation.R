@@ -30,11 +30,25 @@ library(data.table)
 # args = c('r=HMGRelaxTest', 'm=data/mam120aa_trees.rds', 'v=F', 's=g')
 # args = c('r=IPCRelaxTest', 'm=data/mam120aa_trees.rds', 'v=F', 's=g')
 
-args = c('r=NewHiller4Phen', 'm=data/newHillerMainTrees.rds', 'v=F', 's=g') */
+#args = c('r=NewHiller4Phen', 'm=data/newHillerMainTrees.rds', 'v=F', 's=g') 
 
+# TOOTH ARGS
 # ACUTE LOPHS 
-args = c('r=AcuteLophs', 'm=data/UNICORNsDemo.rds', "s=b", 'v=T')
+  # args = c('r=AcuteLophsFull', 'm=data/toothUnicornsMasterTree.rds', "s=b", 'v=T')
+# CORONAL CEMENTUM
+  # args = c('r=CoronalCementum', 'm=data/toothUnicornsMasterTree.rds', "s=b")
+# OBTUSE LOPHS
+  # args = c('r=ObtuseLophs', 'm=data/toothUnicornsMasterTree.rds', "s=b")
+# OCCLUSAL TOPOGRAPHY
+  args = c('r=OcclusalTop', 'm=data/toothUnicornsMasterTree.rds', "s=b")
+# STRUCTURAL FORTIFICATION
+ # args = c('r=StructuralFortification', 'm=data/toothUnicornsMasterTree.rds', "s=b")
 
+
+
+  
+  
+  
 # --- Standard start-up code ---
 # args = commandArgs(trailingOnly = TRUE)
 {  # Bracket used for collapsing purposes

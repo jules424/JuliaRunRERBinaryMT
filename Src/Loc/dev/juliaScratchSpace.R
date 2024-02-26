@@ -14,6 +14,8 @@ length(mainTrees$masterTree$tip.label)
 length(toothData$FaName)
 pathsObject
 
+saveRDS(mainTrees, "Data/toothUnicornsMasterTree.rds")
+
 
 
 
@@ -30,6 +32,10 @@ length(mainTrees$trees$UNICORN_100282$tip.label)
 
 
 
+
+# WYNN MEETING 2/23
+??plotRers
+# figure out shift overall between UNICORNS and genome wide test statistics
 
 # DOWNLOAD Q VALUE PACKAGE 
 if (!require("BiocManager", quietly = TRUE))
