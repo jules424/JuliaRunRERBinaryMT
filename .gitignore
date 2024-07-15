@@ -2,8 +2,8 @@
 .Rhistory
 .RData
 .Ruserdata
-Output/*
-!Output/BinaryCVHApplesToApples
+toothphenoviolin.pdf
+Output/BinaryCVHApplesToApples
 RemadeTreesAllZoonomiaSpecies.rds
 ProjectFrameworkPreGitted.Rproj
 allInsectivory
@@ -38,3 +38,4 @@ Output/EcholocationUpdate2
 !Output/HMGRelaxTest
 !Output/IPCUnRelaxTest
 !Output/HMGUnRelaxTest
+!Output/AcuteLophsFull
